@@ -27,6 +27,10 @@ namespace MVC7Days_2.Controllers
         }
         */
         // sekoj public metod ako ne e oznacen so [NonAction] moze da se povika
+        public ActionResult GetView()
+        {
+            return View("MyView");
+        }
         public Customer GetCustomer()
         {
             Customer c = new Customer();
